@@ -1,21 +1,25 @@
 body {
-background-color: #f4f6f9;
-min-height: 100vh;
+    background-color: #f4f6f9;
+    min-height: 100vh;
 }
 
 .container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 30px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 15px auto;
+    padding: 20px;
     box-sizing: border-box;
 }
 
-
 /* Welcome Card */
 #startScreen {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px !important;
     border-radius: 25px;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 /* Quiz Icon */
@@ -24,91 +28,107 @@ min-height: 100vh;
     justify-content: center;
     align-items: center;
     width: fit-content;
-    margin: 0 auto 1rem;
-    padding: 1rem;
+    margin: 0 auto 12px;
+    padding: 12px;
     border-radius: 50%;
     background-color: #e8f2ff;
     color: #0866f5;
 }
 
-/* Heading */
+/* Welcome Heading */
 #startScreen h1.welcome {
+    font-size: 32px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 1.25rem;
-}
-
-/* Paragraphs */
-#startScreen p {
-    line-height: 1.7;
-    margin-bottom: 1rem;
-}
-
-/* Start Quiz Button */
-#startScreen button {
-    border-radius: 0.75rem;
-    padding: 0.75rem 1.75rem;
-    transition: transform 0.3s ease;
-}
-
-#startScreen button:hover {
-    transform: translateY(-2px);
+    margin-bottom: 12px;
 }
 
 #startScreen .welcome {
     letter-spacing: -0.03em;
 }
 
+/* Welcome Paragraphs */
 #startScreen p {
     color: #49566a;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
 }
 
-#startScreen > p { 
-    font-size: 20px;
-    margin-top: 8px;
+#startScreen > p {
+    font-size: 17px;
+    margin-top: 6px;
+}
+
+/* Start Button */
+#startScreen button {
+    border-radius: 0.75rem;
+    padding: 10px 24px;
+    transition: transform 0.3s ease;
 }
 
 #startScreen button:hover {
+    transform: translateY(-2px);
     box-shadow: 0 0.35rem 0.8rem rgba(0, 102, 245, 0.2);
 }
 
+/* General Cards */
 .card {
-    border: 1px solid #e6e7e9;
-    border-color: #ced0d3;
-    border-radius:20px ;
-    transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.quiz-card {
-    max-width: 650px;
-    min-height: 500px;
-    background-color: white;
-    border: 1px solid #e6e7e9;
-    border-color: #ced0d3;
+    border: 1px solid #ced0d3;
     border-radius: 20px;
-    box-shadow:0 8px 12px rgba(0, 0, 0, 0.2) ;
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
+/* Quiz Card */
+.quiz-card {
+    width: 100%;
+    max-width: 850px;
+    min-height: 500px;
+    margin: 30px auto;
+    padding: 35px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid #ced0d3;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px #ddd;
+    text-align: center;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Question Card */
 .question-card {
     border: none;
     border-radius: 0;
     padding: 15px;
-    box-shadow:none;
+    box-shadow: none;
 }
 
-h1, h2 {
-color: #212529;
-font-weight: bold;
-font-family: Georgia, serif;
+/* Headings */
+h1,
+h2 {
+    color: #212529;
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
+
+h1 {
+    font-size: 42px;
+    color: #233e7a;
 }
 
 p {
     font-size: 16px;
-    font-style:normal;
+    font-style: normal;
     line-height: 1.6;
 }
 
+/* Subtitle */
+.subtitle {
+    color: #6685b5;
+    margin: 15px 0 25px;
+}
+
+/* Question Details */
 #questionNumber {
     font-weight: bold;
 }
@@ -122,69 +142,58 @@ p {
     margin-bottom: 20px;
 }
 
-#resultStatus {
-    font-family: Georgia, serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-}
-
+/* Timer */
 #timer {
-font-weight: bold;
-color: #dc3545;
-font-size: 16px;
+    font-weight: bold;
+    color: #dc3545;
+    font-size: 16px;
 }
 
+/* Answer Options */
 #options .form-check {
-border: 1px solid #e6e7e9;
-border-color: #ced0d3;
-border-radius: 8px;
-padding: 12px 12px 12px 38px;
-margin-bottom: 18px;
-cursor: pointer;
-background-color: #fff;
-transition: border-color 0.2s, box-shadow 0.2s;
+    color: #212529;
+    border: 1px solid #ced0d3;
+    border-radius: 8px;
+    padding: 12px 12px 12px 38px;
+    margin-bottom: 18px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 #options .form-check:hover {
-background-color: #f1f3f5;
+    background-color: #f1f3f5;
 }
 
 #options .form-check-input {
-cursor: pointer;
-border-color: #212529;
-}
-
-.progress {
-height: 10px;
-border-radius: 10px;
-background-color: #e5e5e5;
-overflow: hidden;
-}
-
-.progress-bar {
-transition: width 0.3s ease;
-}
-
-#resultStatus {
-font-weight: bold;
+    cursor: pointer;
+    border-color: #212529;
 }
 
 #options .form-check-label {
-color: #212529;
-display: inline-block;
-visibility: visible;
-opacity: 1;
-cursor: pointer;
-line-height: 1.5;
+    color: #212529;
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+    line-height: 1.5;
 }
 
-#options .form-check {
-color: #212529;
-box-shadow: 0 8px 10px rgba(0, 0, 0, 0.08);
-text-align: left;
+/* Progress Bar */
+.progress {
+    height: 10px;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    overflow: hidden;
 }
 
+.progress-bar {
+    transition: width 0.3s ease;
+}
+
+/* Next, Start and Restart Buttons */
 #nextBtn,
 #startBtn,
 #restartBtn {
@@ -206,6 +215,7 @@ text-align: left;
     transform: scale(1.05);
 }
 
+/* Previous Button */
 #previousBtn {
     background-color: rgb(11, 11, 211);
     color: white;
@@ -223,6 +233,7 @@ text-align: left;
     transform: scale(1.05);
 }
 
+/* Submit Button */
 #submitBtn {
     background-color: rgb(6, 88, 6);
     color: white;
@@ -239,13 +250,19 @@ text-align: left;
     border-color: #093a09;
     transform: scale(1.05);
 }
+
+/* Result Card */
 .result-card {
+    width: 100%;
     max-width: 650px;
+    margin: 0 auto;
     border: 1px solid #dee2e6;
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
 }
 
+/* Score Circle */
 .score-circle {
     width: 150px;
     height: 150px;
@@ -255,6 +272,7 @@ text-align: left;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .score-inner {
@@ -270,15 +288,30 @@ text-align: left;
     margin-bottom: 4px;
 }
 
+/* Result Information Boxes */
 .result-box {
     border: 1px solid #dee2e6;
     height: 100%;
 }
 
-#resultStatus {
-    font-weight: bold;
+.result-box i {
+    font-size: 25px;
 }
 
+.result-box h3 {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Result Status */
+#resultStatus {
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Restart Button */
 #restartBtn {
     background-color: white;
     color: black;
@@ -292,54 +325,59 @@ text-align: left;
     color: white;
 }
 
-.result-box i {
-    font-size: 25px;
+/* Info Cards Container */
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 18px 0;
+    width: 100%;
 }
 
-.result-box h3 {
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-.quiz-card {
-    max-width: 850px;
-    margin: 30px auto;
-    padding: 35px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px #ddd;
-    text-align: center;
-}
-
-h1 {
-    font-size: 42px;
-    color: #233e7a;
-}
-
-.subtitle {
-    color: #6685b5;
-    margin: 15px 0 25px;
-}
-
-.info {
+/* Individual Info Cards */
+.info-card {
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 12px;
-    margin-bottom: 12px;
-    background: #f0f6ff;
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 15px;
+    background: #eef6ff;
     border-radius: 12px;
 }
 
-.info p {
+/* Info Card Icons */
+.info-card i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4389e8;
+    background-color: #dcecff;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* Info Card Text */
+.info-card span {
     flex: 1;
     text-align: left;
+    color: #536d96;
+    font-size: 17px;
 }
 
-.info strong {
+/* Info Card Values */
+.info-card strong {
     color: #3289f7;
+    padding: 6px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+    font-size: 18px;
 }
 
+/* Start Button Class */
 .start-btn {
     background: #3289f7;
     color: white;
@@ -348,49 +386,29 @@ h1 {
     border-radius: 12px;
     cursor: pointer;
 }
-
-.info-container {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin: 25px 0;
-}
-
-.info-card {
-    display: flex;
-    align-items: center;
-    gap: 18px;
+/* Same Size as Welcome Page */
+#quizScreen {
     width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     box-sizing: border-box;
-    padding: 15px 20px;
-    background:#eef6ff;
-    border-radius: 12px;
 }
 
-.info-card i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:#4389e8;
-    background-color:#dcecff;
-    font-size: 22px;
-    width: 45px;
-    height: 45px;
-    border-radius: 10px;
-    flex-shrink: 0;
-}
-
-.info-card span{
-    flex: 1;
-    text-align: left;
-    color: #536d96;
-    font-size: 20px;
-}
-
-.info-card strong {
-    color: #3289f7;
-    padding: 8px 14px;
-    border-radius: 20px;
-    white-space: nowrap;
-    font-size: 22px;
+/* Quiz Card */
+#quizScreen .quiz-card {
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    margin: 0 auto;
+    padding: 25px;
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid #ced0d3;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
